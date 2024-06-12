@@ -1,5 +1,7 @@
 package com.blind75.leetcode.qstns.arrays;
 
+import java.util.Arrays;
+
 public class KadanesAlgorithmMaxSubArray {
 
     public static void main(String[] args) {
@@ -14,6 +16,9 @@ public class KadanesAlgorithmMaxSubArray {
 
         // Optimal/Best Appraoch - TimeComplexity : 0[N]
         System.out.println(getMaxSubArrayUsingKadanesAlgoApproach(arr));
+
+        // Optimal/Best Appraoch - TimeComplexity : 0[N]
+        System.out.println(Arrays.toString(getMaxSubArrayValueIndexRangesUsingKadaneAlgoApproach(arr)));
     }
 
     private static int getMaxSubArrayBruteForceApproach(int[] arr) {
@@ -58,5 +63,26 @@ public class KadanesAlgorithmMaxSubArray {
             maxSumValue = Math.max(maxSumValue, sum);
         }
         return maxSumValue;
+    }
+
+    private static int[] getMaxSubArrayValueIndexRangesUsingKadaneAlgoApproach(int[] arr) {
+
+        int sum = 0, maxSumValue = Integer.MIN_VALUE, start = 0, startIndex = -1, endIndex = -1;
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (sum == 0) start = i;
+            sum += arr[i];
+
+            if (sum > maxSumValue) {
+                maxSumValue = sum;
+                startIndex = start;
+                endIndex = i;
+            }
+
+            if(sum < 0)  sum = 0;
+        }
+
+        return new int[]{maxSumValue, startIndex, endIndex};
     }
 }
