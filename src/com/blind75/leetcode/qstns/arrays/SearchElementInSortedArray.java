@@ -30,7 +30,6 @@ public class SearchElementInSortedArray {
 
         int low = 0, high = list.size() - 1;
 
-        //7,8,9,1,2,3,4,5,6
         while (low <= high) {
             int mid = (low + high) / 2;
 
@@ -39,21 +38,30 @@ public class SearchElementInSortedArray {
             if (list.get(low) <= list.get(mid)) {
 
                 if (list.get(low) <= target && target <= list.get(mid)) {
+
+                    // element exists
                     high = mid - 1;
+
                 } else {
+
+                    // element doesn't exists
                     low = mid + 1;
                 }
 
             } else {
 
                 if (list.get(mid) <= target && target <= list.get(high)) {
+
+                    // element exists
                     low = mid + 1;
+
                 } else {
+
+                    //  element doesn't exists
                     high = mid - 1;
                 }
 
             }
-
         }
         return -1;
     }
