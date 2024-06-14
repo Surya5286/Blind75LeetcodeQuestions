@@ -8,13 +8,16 @@ public class ThreeSum {
 
         int[] arr = {-1, 0, 1, 2, -1, -4};
 
-        // Brute Force - TC : O[N^3 *  log ( no.of triplets)] SC: 2 log ( no.of triplets)
+        // Brute Force Approach
+        // Time Complexity : O[N^3 *  log ( no.of triplets)]  -- Space Complexity: 2 log ( no.of triplets)
         System.out.println(getTripletSumListISZeroUsingBruteForceApproach(arr));
 
-        // Better Force - TC : O[N^2 *  log ( no.of triplets)] SC: 2 log ( no.of triplets) + O[N]
+        // Better Approach
+        // Time Complexity : O[N^2 *  log ( no.of triplets)] -- Space Complexity: 2 log ( no.of triplets) + O[N]
         System.out.println(getTripletSumListISZeroUsingBetterApproach(arr));
 
-        // Optimal Force - TC : O[N^2 *  logN] SC: O[1]
+        // Optimal/Best
+        // Time Complexity : O[N^2 *  logN]  & Space Complexity: O[1]
         System.out.println(getTripletSumListISZeroUsingOptimalApproach(arr));
     }
 
