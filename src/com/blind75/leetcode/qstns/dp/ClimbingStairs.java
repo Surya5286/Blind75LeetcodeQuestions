@@ -27,21 +27,6 @@ public class ClimbingStairs {
         System.out.println(climbingStairsUsingSpaceOptimizationApproach(n));
     }
 
-    private static int climbingStairsUsingSpaceOptimizationApproach(int n) {
-
-        int prev2 = 0, prev = 1;
-
-        for (int i = 2; i <= n; i++) {
-
-            int curr = prev + prev2;
-
-            prev2 = prev;
-            prev = curr;
-
-        }
-        return prev;
-    }
-
     private static int climbingStairsUsingRecursion(int n) {
 
         if (n <= 1) return n;
@@ -68,5 +53,18 @@ public class ClimbingStairs {
             dp[i] = dp[i - 1] + dp[i - 2];
 
         return dp[n];
+    }
+
+    private static int climbingStairsUsingSpaceOptimizationApproach(int n) {
+
+        int prev2 = 0, prev = 1;
+        for (int i = 2; i <= n; i++) {
+            int curr = prev + prev2;
+
+            prev2 = prev;
+            prev = curr;
+
+        }
+        return prev;
     }
 }
