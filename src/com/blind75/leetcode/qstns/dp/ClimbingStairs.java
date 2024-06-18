@@ -29,7 +29,8 @@ public class ClimbingStairs {
 
     private static int climbingStairsUsingRecursion(int n) {
 
-        if (n <= 1) return n;
+        // If in case of Fibonacci - starting value would be "0" - Hence return statement would be "return n"
+        if (n <= 1) return 1;
 
         return climbingStairsUsingRecursion(n - 1) + climbingStairsUsingRecursion(n - 2);
     }
@@ -37,7 +38,8 @@ public class ClimbingStairs {
 
     private static int climbingStairsUsingMemoizationApproach(int n, int[] dp) {
 
-        if (n <= 1) return n;
+        // If in case of Fibonacci - starting value would be "0" - Hence return statement would be "return n"
+        if (n <= 1) return 1;
 
         if (dp[n] != -1) return dp[n];
         return climbingStairsUsingMemoizationApproach(n - 1, dp) + climbingStairsUsingMemoizationApproach(n - 2, dp);
@@ -46,7 +48,8 @@ public class ClimbingStairs {
 
     private static int climbingStairsUsingTabulationApproach(int n, int[] dp) {
 
-        dp[0] = 0;
+        // If in case of Fibonacci - starting value would be "0" - Hence starting Index will be "0" but in here it would be "1"
+        dp[0] = 1;
         dp[1] = 1;
 
         for (int i = 2; i < dp.length; i++)
@@ -57,7 +60,8 @@ public class ClimbingStairs {
 
     private static int climbingStairsUsingSpaceOptimizationApproach(int n) {
 
-        int prev2 = 0, prev = 1;
+        // If in case of Fibonacci - starting value would be "0" - Hence starting Index will be "0" but in here it would be "1"
+        int prev2 = 1, prev = 1;
         for (int i = 2; i <= n; i++) {
             int curr = prev + prev2;
 
