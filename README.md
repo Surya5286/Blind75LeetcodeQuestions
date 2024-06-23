@@ -1,1 +1,12 @@
-This Repository contains the 75 DSA Leetcode Java Solutions from the Blind75 Cheat Sheet.
+# Blind 75 Leetcode Questions
+
+## Description
+Blind 75 leetcode is a list of 75 most frequent asked leetcode questions which had helped many developers clear interviews of __Google, Amazon, Microsoft, Facebook__ etc.
+
+
+> This is a tried and tested list with 1000s of testimonials available on all public review platforms such as  _Quora, Teamblind_  etc.
+
+
+***
+__README.md__ File would be updated with latest updates on daily basis about the course status.
+
