@@ -6,3 +6,7 @@ Blind 75 leetcode is a list of 75 most frequent asked leetcode questions which h
 
 > This is a tried and tested list with 1000s of testimonials available on all public review platforms such as  _Quora, Teamblind_  etc.
 
+
+***
+__README.md__ File would be updated with latest updates on daily basis about the course status.
+
