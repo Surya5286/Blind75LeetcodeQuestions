@@ -15,25 +15,25 @@ __README.md File would be updated with latest updates on regular basis about the
 
 | S.No | Category           | Question                            | High Level Description                                           | Difficulty | Status      |
 |------|--------------------|-------------------------------------|------------------------------------------------------------------|------------|-------------|
-| 1    | Array              | Two Sum                             | Find two numbers that add up to a specific target.               | Easy       | Incomplete  |
-| 2    | Array              | Best Time to Buy and Sell Stock     | Find the maximum profit from buying and selling a stock.         | Easy       | Incomplete  |
-| 3    | Array              | Contains Duplicate                  | Check if the array contains any duplicates.                      | Easy       | Incomplete  |
+| 1    | Array              | Two Sum                             | Find two numbers that add up to a specific target.               | Easy       | Completed  |
+| 2    | Array              | Best Time to Buy and Sell Stock     | Find the maximum profit from buying and selling a stock.         | Easy       | Completed  |
+| 3    | Array              | Contains Duplicate                  | Check if the array contains any duplicates.                      | Easy       | Completed  |
 | 4    | Array              | Product of Array Except Self        | Calculate the product of all elements except the current one.    | Medium     | Incomplete  |
-| 5    | Array              | Maximum Subarray                    | Find the contiguous subarray with the maximum sum.               | Medium     | Incomplete  |
-| 6    | Array              | Maximum Product Subarray            | Find the maximum product of a contiguous subarray.               | Medium     | Incomplete  |
-| 7    | Array              | Find Minimum in Rotated Sorted Array| Find the minimum element in a rotated sorted array.              | Medium     | Incomplete  |
-| 8    | Array              | Search in Rotated Sorted Array      | Search for an element in a rotated sorted array.                 | Medium     | Incomplete  |
-| 9    | Array              | 3 Sum                               | Find all unique triplets in an array that sum up to zero.        | Medium     | Incomplete  |
-| 10   | Array              | Container With Most Water           | Find two lines that form a container that holds the most water.  | Medium     | Incomplete  |
-| 11   | Binary             | Sum of Two Integers                 | Calculate the sum of two integers without using the plus sign.   | Medium     | Incomplete  |
-| 12   | Binary             | Number of 1 Bits                    | Count the number of '1' bits in a binary number.                 | Easy       | Incomplete  |
+| 5    | Array              | Maximum Subarray                    | Find the contiguous subarray with the maximum sum.               | Medium     | Completed  |
+| 6    | Array              | Maximum Product Subarray            | Find the maximum product of a contiguous subarray.               | Medium     | Completed  |
+| 7    | Array              | Find Minimum in Rotated Sorted Array| Find the minimum element in a rotated sorted array.              | Medium     | Completed  |
+| 8    | Array              | Search in Rotated Sorted Array      | Search for an element in a rotated sorted array.                 | Medium     | Completed  |
+| 9    | Array              | 3 Sum                               | Find all unique triplets in an array that sum up to zero.        | Medium     | Completed  |
+| 10   | Array              | Container With Most Water           | Find two lines that form a container that holds the most water.  | Medium     | Completed  |
+| 11   | Binary             | Sum of Two Integers                 | Calculate the sum of two integers without using the plus sign.   | Medium     | Completed  |
+| 12   | Binary             | Number of 1 Bits                    | Count the number of '1' bits in a binary number.                 | Easy       | Completed  |
 | 13   | Binary             | Counting Bits                       | Count the number of bits set to 1 in the binary representation.  | Easy       | Incomplete  |
-| 14   | Binary             | Missing Number                      | Find the missing number in a given array of numbers from 0 to n. | Easy       | Incomplete  |
-| 15   | Binary             | Reverse Bits                        | Reverse the bits of a given 32-bit unsigned integer.             | Easy       | Incomplete  |
-| 16   | Dynamic Programming| Climbing Stairs                     | Count the number of ways to climb a staircase with n steps.      | Easy       | Incomplete  |
+| 14   | Binary             | Missing Number                      | Find the missing number in a given array of numbers from 0 to n. | Easy       | Completed  |
+| 15   | Binary             | Reverse Bits                        | Reverse the bits of a given 32-bit unsigned integer.             | Easy       | Completed  |
+| 16   | Dynamic Programming| Climbing Stairs                     | Count the number of ways to climb a staircase with n steps.      | Easy       | Completed  |
 | 17   | Dynamic Programming| Coin Change                         | Find the minimum number of coins needed to make a certain amount.| Medium     | Incomplete  |
-| 18   | Dynamic Programming| Longest Increasing Subsequence      | Find the length of the longest increasing subsequence.           | Medium     | Incomplete  |
-| 19   | Dynamic Programming| Longest Common Subsequence          | Find the longest common subsequence between two strings.         | Medium     | Incomplete  |
+| 18   | Dynamic Programming| Longest Increasing Subsequence      | Find the length of the longest increasing subsequence.           | Medium     | Completed  |
+| 19   | Dynamic Programming| Longest Common Subsequence          | Find the longest common subsequence between two strings.         | Medium     | Completed  |
 | 20   | Dynamic Programming| Word Break Problem                  | Determine if a string can be segmented into dictionary words.    | Medium     | Incomplete  |
 | 21   | Dynamic Programming| Combination Sum                     | Find all combinations that sum up to a target number.            | Medium     | Incomplete  |
 | 22   | Dynamic Programming| House Robber                        | Find the maximum amount of money you can rob without robbing adjacent houses. | Medium | Incomplete  |
@@ -54,12 +54,12 @@ __README.md File would be updated with latest updates on regular basis about the
 | 37   | Interval           | Non-overlapping Intervals           | Find the minimum number of intervals to remove.                  | Medium     | Incomplete  |
 | 38   | Interval           | Meeting Rooms (Leetcode Premium)    | Determine if a person could attend all meetings.                 | Easy       | Incomplete  |
 | 39   | Interval           | Meeting Rooms II (Leetcode Premium) | Find the minimum number of meeting rooms required.               | Medium     | Incomplete  |
-| 40   | Linked List        | Reverse a Linked List               | Reverse a singly linked list.                                    | Easy       | Incomplete  |
-| 41   | Linked List        | Detect Cycle in a Linked List       | Detect if a cycle exists in a linked list.                       | Easy       | Incomplete  |
-| 42   | Linked List        | Merge Two Sorted Lists              | Merge two sorted linked lists.                                   | Easy       | Incomplete  |
-| 43   | Linked List        | Merge K Sorted Lists                | Merge k sorted linked lists and return it as one sorted list.    | Hard       | Incomplete  |
-| 44   | Linked List        | Remove Nth Node From End Of List    | Remove the nth node from the end of a linked list.               | Medium     | Incomplete  |
-| 45   | Linked List        | Reorder List                        | Reorder a linked list.                                           | Medium     | Incomplete  |
+| 40   | Linked List        | Reverse a Linked List               | Reverse a singly linked list.                                    | Easy       | Completed  |
+| 41   | Linked List        | Detect Cycle in a Linked List       | Detect if a cycle exists in a linked list.                       | Easy       | Completed  |
+| 42   | Linked List        | Merge Two Sorted Lists              | Merge two sorted linked lists.                                   | Easy       | Completed  |
+| 43   | Linked List        | Merge K Sorted Lists                | Merge k sorted linked lists and return it as one sorted list.    | Hard       | Completed  |
+| 44   | Linked List        | Remove Nth Node From End Of List    | Remove the nth node from the end of a linked list.               | Medium     | Completed  |
+| 45   | Linked List        | Reorder List                        | Reorder a linked list.                                           | Medium     | Completed  |
 | 46   | Matrix             | Set Matrix Zeroes                   | Set entire row and column to 0 if an element is 0.               | Medium     | Incomplete  |
 | 47   | Matrix             | Spiral Matrix                       | Traverse a matrix in a spiral order.                             | Medium     | Incomplete  |
 | 48   | Matrix             | Rotate Image                        | Rotate an n x n matrix by 90 degrees.                            | Medium     | Incomplete  |
