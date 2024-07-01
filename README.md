@@ -91,3 +91,8 @@ __README.md File would be updated with latest updates on regular basis about the
 | 74   | Heap               | Merge K Sorted Lists                | Merge k sorted linked lists and return it as one sorted list.    | Hard       | Incomplete  |
 | 75   | Heap               | Top K Frequent Elements             | Find the k most frequent elements in an array.                   | Medium     | Incomplete  |
 | 76   | Heap               | Find Median from Data Stream        | Find the median of a data stream.                                | Hard       | Incomplete  |
+
+
+### TODO:
+1. _Status of completion_ :-  Java Solutions and the Questions Tabular Content Status column must be updated with 'Completed' in respective commit.
+2. _Link Column_ __Question__ _with the URL to the_ __JAVA Solution__ _as hyperlink_
