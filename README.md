@@ -69,7 +69,7 @@ __README.md File would be updated with latest updates on regular basis about the
 | 52   | String             | Minimum Window Substring                                                                                                                                                       | Find the minimum window in a string that contains all characters of another string. | Hard | Incomplete |
 | 53   | String             | Valid Anagram                                                                                                                                                                  | Check if two strings are anagrams of each other.                 | Easy       | Incomplete  |
 | 54   | String             | Group Anagrams                                                                                                                                                                 | Group a list of strings into anagrams.                           | Medium     | Incomplete  |
-| 55   | String             | Valid Parentheses                                                                                                                                                              | Check if a string containing '(', ')', '{', '}', '[' and ']' is valid. | Easy | Incomplete  |
+| 55   | String             | Valid Parentheses                                                                                                                                                              | Check if a string containing '(', ')', '{', '}', '[' and ']' is valid. | Easy | Completed  |
 | 56   | String             | Valid Palindrome                                                                                                                                                               | Determine if a string is a palindrome.                           | Easy       | Incomplete  |
 | 57   | String             | Longest Palindromic Substring                                                                                                                                                  | Find the longest palindromic substring.                          | Medium     | Incomplete  |
 | 58   | String             | Palindromic Substrings                                                                                                                                                         | Find the number of palindromic substrings in a string.           | Medium     | Incomplete  |
@@ -95,4 +95,5 @@ __README.md File would be updated with latest updates on regular basis about the
 
 ### TODO:
 1. _Status of completion_ :-  Java Solutions and the Questions Tabular Content Status column must be updated with 'Completed' in respective commit.
-2. _Link Column_ __Question__ _with the URL to the_ __JAVA Solution__ _as hyperlink_
+2. _Link Column_ __Question__ _with the URL to the_ __JAVA Solution__ _as hyperlink_ 
+NOTE:- Step 2 to be performed only when the changes been promoted to master branch. 
