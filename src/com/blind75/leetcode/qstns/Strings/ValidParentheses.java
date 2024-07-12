@@ -28,8 +28,11 @@ public class ValidParentheses {
     }
 
     /**
-     * @param str - Incoming Patntheses String
-     * @return - Returns the Boolean Value [true, false]
+     * isValidParentheses - Method to evaluate Incoming Parentheses String
+     * and Returns the Boolean Value [true, false]
+     *
+     * @param str Incoming Parentheses String
+     * @return Returns the Boolean Value [true, false]
      */
     private static boolean isValidParentheses(String str) {
 
