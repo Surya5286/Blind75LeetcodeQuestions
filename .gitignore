@@ -1,29 +1,63 @@
-### IntelliJ IDEA ###
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+*.log
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.class
 
-### Eclipse ###
-.apt_generated
+# Eclipse
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
+.settings/
+.metadata/
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.externalToolBuilders/
+*.launch
+*.pydevproject
+.cproject
+.factorypath
+.buildpath
+.target
+.tern-project
+.texlipse
+.springBeans
+.recommenders/
+.apt_generated/
+.apt_generated_test/
+.cache-main
+.scala_dependencies
+.worksheet
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# Visual Studio Code
 .vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+.history
+.ionide
 
-### Mac OS ###
-.DS_Store
+# Spring Tool Suite (STS)
+.sts4-cache/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xm
