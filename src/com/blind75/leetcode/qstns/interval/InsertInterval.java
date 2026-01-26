@@ -2,18 +2,18 @@ package com.blind75.leetcode.qstns.interval;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class InsertInterval {
 
     public static void main(String[] args) {
 
-        int[][] intervals = {{1,3},{6,9}};
-        int[] newInterval = {2,5};
+        int[][] intervals = {{1, 3}, {6, 9}};
+        int[] newInterval = {2, 5};
 
-        int[][] intervals2 = new int[][]{{1,2},{3,5},{6,7},{8,10},{12,16}};
-        int[] newInterval2 = new int[]{4,8};
+        int[][] intervals2 = new int[][]{{1, 2}, {3, 5}, {6, 7}, {8, 10}, {12, 16}};
+        int[] newInterval2 = new int[]{4, 8};
 
         int[][] result = insertIntervalUsingBetterApproach(intervals, newInterval);
         System.out.println("Merged Intervals Using Better Approach: " + Arrays.deepToString(result));
@@ -38,13 +38,12 @@ public class InsertInterval {
 
         // Edge case: if intervals is empty, return newInterval as the only interval
         if (intervals == null || intervals.length == 0)
-            return new int[][] {newInterval};
+            return new int[][]{newInterval};
 
-        List<int[]> combinedInterval = new ArrayList<>();
+        // Combine the new interval with existing intervals
+        List<int[]> combinedInterval = new ArrayList<>(Arrays.asList(intervals));
 
-        for (int i = 0; i < intervals.length; i++)
-            combinedInterval.add(intervals[i]);
-
+        // Add the new interval to the list
         combinedInterval.add(newInterval);
 
         return mergeIntervals(combinedInterval);
@@ -52,11 +51,11 @@ public class InsertInterval {
 
     private static int[][] mergeIntervals(List<int[]> combinedInterval) {
 
-        if(combinedInterval == null || combinedInterval.isEmpty())
+        if (combinedInterval == null || combinedInterval.isEmpty())
             return new int[0][];
 
         // Sort the intervals based on the start time
-        combinedInterval.sort((a, b) -> Integer.compare(a[0], b[0]));
+        combinedInterval.sort(Comparator.comparingInt(a -> a[0]));
 
         List<int[]> result = new ArrayList<>();
         result.add(combinedInterval.getFirst());
@@ -64,7 +63,7 @@ public class InsertInterval {
         for (int i = 1; i < combinedInterval.size(); i++) {
 
             int[] existingInterval = result.getLast();
-            if(existingInterval[1] >= combinedInterval.get(i)[0]) {
+            if (existingInterval[1] >= combinedInterval.get(i)[0]) {
                 existingInterval[1] = Math.max(existingInterval[1], combinedInterval.get(i)[1]);
             } else {
                 result.addLast(combinedInterval.get(i));
@@ -82,7 +81,7 @@ public class InsertInterval {
     private static int[][] insertIntervalUsingOptimalApproach(int[][] intervals, int[] newInterval) {
 
         if (intervals == null || intervals.length == 0)
-            return new int[][] {newInterval};
+            return new int[][]{newInterval};
 
         int newStart = newInterval[0];
         int newEnd = newInterval[1];
@@ -95,13 +94,13 @@ public class InsertInterval {
             int start = interval[0];
             int end = interval[1];
 
-            if(newEnd < start) {
-                if(!isInserted) {
-                    result.addLast(new int[] {newStart, newEnd});
+            if (newEnd < start) {
+                if (!isInserted) {
+                    result.addLast(new int[]{newStart, newEnd});
                     isInserted = true;
                 }
                 result.add(interval);
-            } else if(newStart > end) {
+            } else if (newStart > end) {
                 result.add(interval);
             } else {
                 newStart = Math.min(newStart, start);
@@ -110,7 +109,7 @@ public class InsertInterval {
         }
 
         if (!isInserted)
-            result.addLast(new int[] {newStart, newEnd});
+            result.addLast(new int[]{newStart, newEnd});
 
         return result.toArray(new int[result.size()][]);
     }
